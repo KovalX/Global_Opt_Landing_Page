@@ -1,0 +1,136 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: url('../img/main_bg.png') center center/cover no-repeat;
+    height: 680px;
+    padding-top: 23px;
+}
+
+header .header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.header_nav .menu .menu_link {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.header_nav .menu .menu_item {
+    border-right: 2px dotted grey;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.header_nav .menu .menu_item:last-child {
+    border-right: none;
+}
+
+.header_top .call_btn {
+    width: 160px;
+    height: 45px;
+    background-color: #ec644b;
+    border-radius: 30px;
+    border: none;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.header_top .header_call {
+    text-align: right;
+    color: #ffffff;
+}
+
+.header_top .header_call .any_questions {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.header_top .header_call .header_phone {
+    font-size: 19px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.header_content .company_descr {
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.header_content .header_title {
+    /* font-family: RobotoCondensed; */
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ec644b;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.header_content .header_subtitle {
+    /* font-family: RobotoCondensed; */
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+.divider {
+    margin-top: 38px;
+    text-align: center;
+}
+
+.company_function {
+    text-align: center;
+    margin-top: 31px;
+}
+
+.company_function .function_descr {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+}
+
+.function_icon {
+    height: 67px;
+}
+
+.header_content .calc_btn {
+    display: block;
+    width: 230px;
+    height: 57px;
+    background-color: #ec644b;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 30px;
+    border: none;
+    margin: 0 auto;
+    margin-top: 39px;
+}
