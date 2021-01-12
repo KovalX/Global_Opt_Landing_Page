@@ -38,15 +38,16 @@
     .header__function-descr
         font-size: 13px
         line-height: 18px
-    .prices
-        &__item
-            &-price
-                font-size: 22px
-            &-descr
-                height: 110px
-            &-btn
-                width: 130px
-                height: 40px
+    .prices__item
+        &-delivery
+            font-size: 13px
+        &-price
+            font-size: 22px
+        &-descr
+            height: 110px
+        &-btn
+            width: 130px
+            height: 40px
     .consultation-form
         padding: 0 30px 0 30px
         &__input
@@ -60,54 +61,57 @@
         font-size: 24px
 
 @media (max-width: 767px)
-    .header_top
-        .header_nav
-            .menu
-                position: fixed
-                flex-direction: column
-                justify-content: center
-                align-items: center
-                top: 0
-                left: -100%
-                width: 50%
-                height: 100vh
-                padding: 20px 15px
-                background-color: rgba(0,0,0, .8)
-                transition: 0.6s all
-                &_active
-                    left: 0
-                &_item
-                    padding: 0
-                    border: none
-                    margin: 10px 0
-                    .menu_link
-                        font-size: 20px
-        .logo
-            &_icon
-                width: 60px
-        .header_call
-            .any_questions
-                font-size: 12px
-            .header_phone
-                font-size: 12px
-        .call_btn
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0, .8)
+        // background-color: red
+        transition: 0.6s all
+        z-index: 100
+        &__list
+            flex-direction: column
+        &_active
+            left: 0
+        &__list-item
+            padding: 0
+            border: none
+            margin: 10px 0
+        &__link
+            font-size: 20px
+
+    .logo__img
+        width: 70px
+    .call
+        &__descr
+            font-size: 12px
+        &__phone
+            font-size: 12px
+    .call-btn
             width: 120px
             font-size: 10px
             height: 35px
-    .header_content
+
+    .header__content
         padding-bottom: 30px
-        .company_descr
-            margin-top: 15px
-            font-size: 15px
-        .header_title
-            font-size: 36px
-        .header_subtitle
-            font-size: 16px
-            margin-top: 10px
-        .divider
-            margin-top: 20px
-        .company_function .function_descr
-            font-size: 13px
+    .header__descr
+        margin-top: 15px
+        font-size: 15px
+    .header__title
+        font-size: 36px
+    .header__subtitle
+        font-size: 16px
+        margin-top: 10px
+    .divider
+        margin-top: 20px
+    .header__function-descr
+        font-size: 13px
     .hamburger
         display: block
         width: 26px
@@ -130,93 +134,106 @@
                     transform: translateY(3px) rotate(45deg)
     .title
         font-size: 21px
-    .about_us_descr
+    .about__descr
         font-size: 17px
-    .agent_text
+    .services__text
         font-size: 17px
-    .prices_descr
+    .prices__descr
         font-size: 18px
-    .prices_items
+    .prices__items
         flex-wrap: wrap
-        .prices_item
-            flex-basis: 45%
-            &_top
-                span
-                    font-size: 13px
-            &_price
-                font-size: 18px
-            &_descr
-                margin: 0 3px 0 3px
-                height: 60px
+    .prices__item
+        flex-basis: 45%
+        &-top
+            span
+                font-size: 13px
+        &-price
+            font-size: 18px
+        &-descr
+            margin: 0 3px 0 3px
+            height: 60px
     .consultation
         padding-bottom: 40px
-        &_form
-            &_icon
-                top: -17%
-            .input_items
-                flex-direction: column
-                align-items: center
-                justify-content: space-between
-                margin-bottom: 40px
-                .input_item
-                    margin-bottom: 12px
-                    width: 70%
-            .submit_btn
-                top: 91%
-    .write_us
+        &-form__icon
+            top: -17%
+        &-form__inputs
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 40px
+        &-form__input
+            margin-bottom: 12px
+            width: 70%
+        &-form__btn
+            top: 91%
+    .write-us
         padding-bottom: 30px
-        &_form
+        &__form
             padding-bottom: 15px
-            .form_content
-                .input_items
-                    flex-wrap: wrap
-                    .input_item
-                        flex-basis: 100%
-                        margin-bottom: 4px
-                        &:last-child
-                            margin-bottom: 0
-    .footer
-        &_block
-            .footer_title
-                flex-basis: 39%
-            .footer_call
-                flex-basis: 42%
+        &__items
+            flex-wrap: wrap
+        &__item
+            flex-basis: 100%
+            margin-bottom: 4px
+            &:last-child
+                margin-bottom: 0
+    
+    .footer__title
+        flex-basis: 39%
+    .footer__call
+        flex-basis: 45%
 
 @media (max-width: 575px)
-    .header_content
-        .header_title
-            font-size: 28px
-        .header_subtitle
-            font-size: 14px
-        .company_function
-            width: 50%
-            .function_descr
-                font-size: 16px
-                padding: 0 15px 0 15px
-        .calc_btn
-            width: 200px
-            height: 50px
-    .about_us
+    .logo__img
+        width: 50px
+    .call__descr
+        font-size: 11px
+    .call__phone
+        font-size: 10px
+    .call-btn
+        width: 102px
+        height: 30px
+        font-size: 9px
+    .header__title
+        font-size: 28px
+    .header__subtitle
+        font-size: 14px
+    .header__function
+        width: 50%
+    .header__function-descr
+        font-size: 13px
+        padding: 0 10px
+    .header__calc-btn
+        width: 200px
+        height: 50px
+    .about
         padding-bottom: 20px
-        &_descr
+        &__descr
             font-size: 15px
-    .prices
-        &_items
-            .prices_item_descr
-                height: 100px
-    .managers
-        &_descr
-            font-size: 14px
-    .work_scheme_items 
-        .work_scheme_item
-            width: 45%
+    .prices__item-descr
+        font-size: 12px
+        height: 80px
+    .prices__item-btn
+        width: 120px
+        height: 35px
+    .consultation-form__input
+        width: 100%
+    .services__title
+        font-size: 24px
+    .services__text
+        font-size: 14px
+        line-height: 20px
+    .work-scheme__item
+        width: 45%
     .reviews
         padding-bottom: 20px
-        &_subtitle
+        &__subtitle
             font-size: 17px
-    .footer
-        &_block
-            .footer_title
-                display: none
-            .footer_call
-                flex-basis: 69%
+    .footer__title
+        display: none
+    .footer__call
+        flex-basis: 69%
+    .footer__copyright
+        font-size: 11px
+    .footer__link
+        font-size: 11px
