@@ -1,82 +1,63 @@
 @media (max-width: 1200px)
-    .header_top
-        .header_call
-            .header_phone
-                font-size: 16px
-        .header_nav
-            .menu
-                .menu_link
-                    font-size: 12px
-    .header_content
-        .header_title
-            font-size: 60px
-        .header_subtitle
-            font-size: 34px
-    .footer_block
-        .footer_call
-            .call_block
-                .footer_phone
-                    font-size: 16px
+    .menu
+        &__link
+            font-size: 12px
+    .call
+        &__phone
+            font-size: 16px
+    .header__title
+        font-size: 60px
+    .header__subtitle
+        font-size: 34px
+    .call__phone
+        font-size: 14px
 
 @media (max-width: 991px)
-    .header_top
-        .logo
-            &_icon
-                width: 70px
-        .header_call
-            .any_questions
-                font-size: 10px
-            .header_phone
-                font-size: 10px
-        .header_nav
-            .menu
-                &_item
-                    padding-left: 5px
-                    padding-right: 5px
-                .menu_link
-                    font-size: 11px
-        .call_btn
-            width: 100px
-            font-size: 9px
-    .header_content
-        .company_descr
-            font-size: 20px
-        .header_title
-            font-size: 48px
-        .header_subtitle
-            font-size: 32px
-        .company_function .function_descr
-            font-size: 13px
-    .prices
-        &_item
-            &_price
-                font-size: 22px
-            &_descr
-                height: 110px
-            &_btn
-                width: 130px
-    .work_scheme_items .work_scheme_item .item_descr
+    .logo__img
+        width: 70px
+    .call
+        &__descr
+            font-size: 10px
+        &__phone
+            font-size: 10px
+    .menu__list-item
+        padding-left: 5px
+        padding-right: 5px
+    .menu__link
+        font-size: 11px
+    .call-btn
+        width: 100px
+        height: 35px
+        font-size: 9px
+    .header__descr
+        font-size: 20px
+    .header__title
+        font-size: 48px
+    .header__subtitle
+        font-size: 32px
+    .header__function-descr
         font-size: 13px
-    .consultation
-        &_form
-            padding: 0 30px 0 30px
-            .input_items
-                .input_item
-                    width: 205px
-    .footer
-        &_block
-            .footer_title
-                font-size: 13px
-                flex-basis: 52%
-            .footer_call
-                .call_block
-                    .any_questions
-                        font-size: 10px
-                    .footer_phone
-                        font-size: 10px
-                .call_btn
-                    width: 120px
-                    font-size: 10px
+        line-height: 18px
+    .prices
+        &__item
+            &-price
+                font-size: 22px
+            &-descr
+                height: 110px
+            &-btn
+                width: 130px
+                height: 40px
+    .consultation-form
+        padding: 0 30px 0 30px
+        &__input
+            width: 205px
+    .work-scheme__item-descr
+        font-size: 13px
+    .footer__title
+        font-size: 13px
+        flex-basis: 52%
+    .title
+        font-size: 24px
 
 @media (max-width: 767px)
     .header_top

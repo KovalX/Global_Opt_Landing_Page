@@ -1,102 +1,87 @@
-header
+.header
 	background: url('../img/main_bg.png') center (center / cover) no-repeat
 	min-height: 680px
 	padding-top: 23px
-
-	.header_top
+	&__top
 		display: flex
 		justify-content: space-between
 		align-items: center
 
-.hamburger
-	display: none
-
-.header_nav .menu
-	list-style-type: none
-	display: flex
-	justify-content: space-between
-	align-items: center
-	padding: 0
-	margin: 0
-	.menu_link
+.menu
+	&__list
+		list-style-type: none
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 0
+		margin: 0
+		&-item
+			border-right: 2px dotted grey
+			padding-right: 10px
+			padding-left: 10px
+	&__link
 		font-size: 15px
 		font-weight: 400
 		color: #ffffff
-	.menu_item
-		border-right: 2px dotted grey
-		padding-right: 10px
-		padding-left: 10px
 		&:last-child
 			border-right: none
 
-.header_top 
-	.call_btn
-		width: 160px
-		height: 45px
-
-	.header_call
-		text-align: right
-		color: #ffffff
-
-		.any_questions
-			font-size: 14px
-			font-weight: 300
-
-		.header_phone
-			font-size: 19px
-			font-weight: 700
-			color: #ffffff
-
-.header_content 
-	.company_descr
-		font-size: 24px
-		line-height: 1.2
+.call
+	text-align: right
+	color: #ffffff
+	&__descr
+		font-size: 14px
 		font-weight: 300
-		color: #ffffff
-		text-align: center
-		margin-top: 5px
-
-	.header_title
-		/* font-family: RobotoCondensed;
-		font-size: 72px
-		line-height: 1.2
+	&__phone
+		font-size: 19px
 		font-weight: 700
-		text-transform: uppercase
-		color: $main-color
-		text-align: center
-		margin: 10px 0 0 0
-
-	.header_subtitle
-		/* font-family: RobotoCondensed;
-		font-size: 42px
-		line-height: 1.2
-		font-weight: 400
-		text-transform: uppercase
 		color: #ffffff
-		text-align: center
-		margin: 0
 
-.divider
+.header__descr
+	font-size: 24px
+	line-height: 1.2
+	font-weight: 300
+	color: #ffffff
+	text-align: center
+	margin-top: 5px
+	
+.header__title
+	font-size: 72px
+	line-height: 1.2
+	font-weight: 700
+	text-transform: uppercase
+	color: $main-color
+	text-align: center
+	margin: 10px 0 0 0
+
+.header__subtitle
+	font-size: 42px
+	line-height: 1.2
+	font-weight: 400
+	text-transform: uppercase
+	color: #ffffff
+	text-align: center
+	margin: 0
+
+.header__divider
 	margin-top: 38px
 	text-align: center
-	img
+	&-img
 		width: 100%
 
-.company_function
+.header__function
 	text-align: center
 	margin-top: 31px
-
-	.function_descr
+	&-descr
 		font-size: 16px
 		line-height: 22px
 		font-weight: 300
 		color: #ffffff
 		text-align: center
-
-	.function_icon
+	&-icon
 		height: 67px
 
-.header_content .calc_btn
+.header__calc-btn
 	display: block
 	width: 230px
 	height: 57px
@@ -104,3 +89,6 @@ header
 	font-weight: 700
 	margin: 0 auto
 	margin-top: 39px
+
+.hamburger
+	display: none
