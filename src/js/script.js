@@ -13,5 +13,13 @@ window.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('menu_active');
         })
-    })
+    });
+
+
+    // Carousel
+
+    const prev = document.querySelector('.reviews__carousel-prev'),
+          next = document.querySelector('.reviews__carousel-next'),
+          slidesWrapper = document.querySelector('.reviews__carousel-wrapper'),
+          slidesFiels = document.querySelector('.reviews__carousel-inner');
 })
