@@ -21,5 +21,31 @@ window.addEventListener('DOMContentLoaded', () => {
     const prev = document.querySelector('.reviews__carousel-prev'),
           next = document.querySelector('.reviews__carousel-next'),
           slidesWrapper = document.querySelector('.reviews__carousel-wrapper'),
-          slidesFiels = document.querySelector('.reviews__carousel-inner');
+          slidesField = document.querySelector('.reviews__carousel-inner'),
+          slides = document.querySelectorAll('.reviews__item');
+
+    let slideIndex = 1;
+    let offset = 0;
+
+    slidesWrapper.style.overflow = 'hidden';
+
+    next.addEventListener('click', () => {
+        if (offset == 370 * (slides.length - 1)) {
+            offset = 0;
+        } else {
+            offset += 370;
+        }
+
+        slidesField.style.transform = `translateX(-${offset}px)`
+    });
+
+    prev.addEventListener('click', () => {
+        if (offset == 0) {
+            offset = 370 * (slides.length - 1);
+        } else {
+            offset -= 370;
+        }
+
+        slidesField.style.transform = `translateX(-${offset}px)`
+    });
 })
